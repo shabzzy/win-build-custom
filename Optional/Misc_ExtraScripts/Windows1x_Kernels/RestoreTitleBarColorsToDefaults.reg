@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+;Restores TitleBar colors to default of theme. May not always work as expected and may need a reboot or two.
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"AccentColor"=-
+"AccentColorInactive"=-
+"AccentColorMenu"=-
+"AccentPalette"=-
+
