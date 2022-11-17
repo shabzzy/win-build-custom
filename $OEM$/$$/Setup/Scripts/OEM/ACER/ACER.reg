@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+; set "Brand" details
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
+@=""
+"Manufacturer"="Acer"
+"Model"=-
+"Logo"="%SystemDrive%\\windows\\system32\\oobe\\info\\ACER_BADGE.bmp"
+"SupportPhone"="1-800-571-2237"
+"SupportURL"="https://www.acer.com"
+"SupportHours"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Media Center\Start Menu]
+"OEMLogoUri"="file://%SystemDrive%\\windows\\system32\\oobe\\info\\ACER_MCE_LOGO.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winsat\WindowsExperienceIndexOemInfo]
+"Logo"="%SystemDrive%\\windows\\system32\\oobe\\info\\ACER_BAR.bmp"
+"HardwareUpgradeURL"="https://support.acer.com"
+
+; set "Brand" theme during installation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes]
+"Drop Shadow"="FALSE"
+"Flat Menus"="FALSE"
+"SetupVersion"="10"
+"InstallTheme"="%WINDIR%\\resources\\Themes\\$OEM$.theme"
+"InstallVisualStyle"="%WINDIR%\\resources\\Themes\\Aero\\Aero.msstyles"
+
+; display custom background logon-logoff image (make sure less than 256kb)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]
+"OEMBackground"=dword:00000001
+
+; display custom background logon-logoff image (apply to all themes)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UseOEMBackground"=dword:00000001
