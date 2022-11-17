@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<FirstExperience> 
+<oobe> 
+  <defaults> 
+   <glass>1</glass> 
+  </defaults> 
+  <oem> 
+	 <name>CLEVO</name> 
+   <logopath>\Windows\system32\oobe\info\CLEVO_BADGE.png</logopath> 
+   <OutOfBoxBackground>true</OutOfBoxBackground> 
+	</oem> 
+</oobe>
+</FirstExperience>  
