@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+
+; Full Credits go to @L30 for the logos and wallpaper design.
+
+; set "Brand" details
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
+@=""
+"Manufacturer"="MRP"
+"Model"=-
+"Logo"="\\windows\\system32\\oobe\\info\\MRP_BADGE.bmp"
+"SupportPhone"=-
+"SupportURL"="https://forums.mydigitallife.net/threads/multi-oem-retail-project-mrp-mk3.71555/"
+"SupportHours"="Almost 24/7"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Media Center\Start Menu]
+"OEMLogoUri"="file://c:\\windows\\system32\\oobe\\info\\MRP_MCE_LOGO.png"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winsat\WindowsExperienceIndexOemInfo]
+"Logo"="\\windows\\system32\\oobe\\info\\MRP_BAR.bmp"
+"HardwareUpgradeURL"=-
+
+; set "Brand" theme during installation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes]
+"Drop Shadow"="FALSE"
+"Flat Menus"="FALSE"
+"SetupVersion"="10"
+"InstallTheme"="%WINDIR%\\resources\\Themes\\$OEM$.theme"
+"InstallVisualStyle"="%WINDIR%\\resources\\Themes\\Aero\\Aero.msstyles"
+
+; display custom background logon-logoff image (make sure less than 256kb)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]
+"OEMBackground"=dword:00000001
+
+; display custom background logon-logoff image (apply to all themes)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UseOEMBackground"=dword:00000001
