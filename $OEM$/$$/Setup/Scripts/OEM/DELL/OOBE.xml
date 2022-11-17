@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<FirstExperience> 
+<oobe> 
+  <defaults> 
+   <glass>1</glass> 
+  </defaults> 
+  <oem> 
+	 <name>Dell</name> 
+   <logopath>%SystemDrive%\Windows\system32\oobe\info\DELL_BADGE.png</logopath> 
+   <OutOfBoxBackground>true</OutOfBoxBackground> 
+	</oem> 
+</oobe>
+</FirstExperience>  
